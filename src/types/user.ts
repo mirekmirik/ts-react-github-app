@@ -3,11 +3,11 @@ export type LocalGithubUser = {
   id: number;
   avatar: string;
   name: string;
-  company: string;
+  company: string | null;
   blog: string;
   location: string;
   bio: string;
-  twitter: string;
+  twitter: string | null;
   repos: number;
   followers: number;
   following: number;
@@ -20,11 +20,11 @@ export type GithubUser = {
   id: number;
   avatar_url: string;
   name: string;
-  company: string;
+  company: string | null;
   blog: string;
   location: string;
   bio: string;
-  twitter_username: string;
+  twitter_username: string | null;
   public_repos: number;
   followers: number;
   following: number;
